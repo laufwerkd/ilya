@@ -4,10 +4,7 @@ import useThemeSwitcher from '@/composables/useThemeSwitcher.js'
 
 const { theme, setToTheme } = useThemeSwitcher()
 
-const navItems = [
-  { name: 'home', text: 'Home' },
-  { name: 'about', text: 'About' },
-]
+const navItems = [{ name: 'home', text: 'Home' }]
 const isMenuOpen = ref(false)
 
 const onCloseMenu = () => {
