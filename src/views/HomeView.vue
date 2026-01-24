@@ -2,8 +2,8 @@
 import { ref } from 'vue'
 
 const items = ref([
-  { value: 'flash', title: 'Flash' },
-  { value: 'cat', title: 'Cat' },
+  { value: 'a', title: 'A' },
+  { value: 'b', title: 'B' },
 ])
 </script>
 
@@ -14,11 +14,11 @@ const items = ref([
     <div class="d-flex flex-column ga-3">
       <div class="d-flex ga-3">
         <BaseButton text="Button" />
-        <BaseButton text="Prepend Icon" icon="mdi-flash" />
-        <BaseButton icon="mdi-flash" />
+        <BaseButton text="Icon Button" icon="mdi-check" />
+        <BaseButton icon="mdi-check" />
       </div>
-      <BaseSelect :items="items" label="Test" />
-      <BaseSelect :items="items" label="Test" icon="mdi-plus" />
+      <BaseSelect :items="items" label="Selection" />
+      <BaseSelect :items="items" label="Icon Selection" icon="mdi-check" />
     </div>
   </BaseCard>
 </template>
