@@ -56,4 +56,8 @@ const commonAttrs = computed(() => {
 .v-field--variant-solo-filled {
   box-shadow: unset !important;
 }
+
+.v-list-item__spacer {
+  width: 12px !important;
+}
 </style>

@@ -1,42 +1,24 @@
 import { createVuetify } from 'vuetify'
 import { aliases, mdi } from 'vuetify/iconsets/mdi'
+import { THEMES } from '@/constants'
 import '@/styles/main.scss'
 import '@mdi/font/css/materialdesignicons.css'
 
+const systemIsDark = window.matchMedia?.('(prefers-color-scheme: dark)')?.matches ?? false
+
+const customThemes = {
+  ...THEMES,
+  system: {
+    title: 'System',
+    dark: systemIsDark,
+    colors: systemIsDark ? THEMES.dark.colors : THEMES.light.colors,
+  },
+}
+
 export default createVuetify({
   theme: {
-    themes: {
-      light: {
-        title: 'Light',
-        dark: false,
-        colors: {
-          background: '#ffffff',
-          surface: '#fffbf5',
-          primary: '#f2e8c9',
-          secondary: '#734e40',
-          dark: '#0d0d0d',
-          error: '#ec0a3f',
-          info: '#0088fc',
-          success: '#25d366',
-          warning: '#ffff80',
-        },
-      },
-      dark: {
-        title: 'Dark',
-        dark: true,
-        colors: {
-          background: '#000000',
-          surface: '#1b1a17',
-          primary: '#cbb98f',
-          secondary: '#b08978',
-          dark: '#000000',
-          error: '#ff5c7a',
-          info: '#4dabff',
-          success: '#3ddc84',
-          warning: '#ffd966',
-        },
-      },
-    },
+    defaultTheme: systemIsDark ? 'dark' : 'light',
+    themes: customThemes,
   },
   icons: {
     defaultSet: 'mdi',
