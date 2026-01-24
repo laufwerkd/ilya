@@ -1,5 +1,6 @@
 <script setup>
 import { ref } from 'vue'
+import { FEATURES } from '@/constants'
 
 const navItems = [{ name: 'home', text: 'Home' }]
 const isMenuOpen = ref(false)
@@ -24,8 +25,10 @@ const onCloseMenu = () => {
       <div class="d-flex flex-column ga-1">
         <BaseButton v-for="item in navItems" :to="{ name: item.name }" :text="item.text" @click="onCloseMenu" />
       </div>
-      <v-divider />
-      <AppThemeSwitcher @selection="onCloseMenu" />
+      <template v-if="FEATURES.themes">
+        <v-divider />
+        <AppThemeSwitcher @selection="onCloseMenu" />
+      </template>
     </BaseCard>
   </v-menu>
 </template>
