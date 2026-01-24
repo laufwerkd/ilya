@@ -1,9 +1,10 @@
-<script setup>
-import useThemeSwitcher from '@/composables/useThemeSwitcher.js'
-
-const { toggleTheme } = useThemeSwitcher()
-</script>
+<script setup></script>
 
 <template>
-  <BaseButton @click="toggleTheme" text="Toggle Theme" icon="mdi-theme-light-dark" color="secondary" />
+  <BaseButton
+    @click="console.error('missing action')"
+    text="Toggle Theme"
+    icon="mdi-theme-light-dark"
+    color="secondary"
+  />
 </template>

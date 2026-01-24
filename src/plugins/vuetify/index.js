@@ -5,16 +5,15 @@ import '@mdi/font/css/materialdesignicons.css'
 
 export default createVuetify({
   theme: {
-    defaultTheme: 'dark',
     themes: {
       light: {
         dark: false,
         colors: {
           background: '#ffffff',
-          surface: '#e7e7e7',
-          primary: '#1dab61',
-          'primary-lighten': '#d8fdd2',
-          secondary: '#d0d0d0',
+          surface: '#fffbf5',
+          primary: '#f2e8c9',
+          secondary: '#734e40',
+          dark: '#0d0d0d',
           error: '#ec0a3f',
           info: '#0088fc',
           success: '#25d366',
@@ -24,15 +23,15 @@ export default createVuetify({
       dark: {
         dark: true,
         colors: {
-          background: '#0a0a0a',
-          surface: '#38383a',
-          primary: '#21bf63',
-          'primary-lighten': '#103629',
-          secondary: '#272729',
-          error: '#ef5767',
-          info: '#0087fd',
-          success: '#21bf63',
-          warning: '#ffff80',
+          background: '#000000',
+          surface: '#1b1a17',
+          primary: '#cbb98f',
+          secondary: '#b08978',
+          dark: '#000000',
+          error: '#ff5c7a',
+          info: '#4dabff',
+          success: '#3ddc84',
+          warning: '#ffd966',
         },
       },
     },
@@ -40,8 +39,6 @@ export default createVuetify({
   icons: {
     defaultSet: 'mdi',
     aliases,
-    sets: {
-      mdi,
-    },
+    sets: { mdi },
   },
 })

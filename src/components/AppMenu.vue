@@ -1,8 +1,5 @@
 <script setup>
-import { ref, onMounted } from 'vue'
-import useThemeSwitcher from '@/composables/useThemeSwitcher.js'
-
-const { theme, setToTheme } = useThemeSwitcher()
+import { ref } from 'vue'
 
 const navItems = [{ name: 'home', text: 'Home' }]
 const isMenuOpen = ref(false)
@@ -10,10 +7,6 @@ const isMenuOpen = ref(false)
 const onCloseMenu = () => {
   isMenuOpen.value = false
 }
-
-onMounted(() => {
-  setToTheme(theme)
-})
 </script>
 
 <template>

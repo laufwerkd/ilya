@@ -1,8 +1,4 @@
-<script setup>
-import { onMounted } from 'vue'
-
-onMounted(() => {})
-</script>
+<script setup></script>
 
 <template>
   <BaseCard>
