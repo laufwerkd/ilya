@@ -20,11 +20,11 @@ const props = defineProps({
   },
   variant: {
     type: String,
-    default: 'solo',
+    default: 'solo-filled',
   },
   density: {
     type: String,
-    default: 'compact',
+    default: 'comfortable',
   },
   hideDetails: {
     type: Boolean,
@@ -50,14 +50,3 @@ const commonAttrs = computed(() => {
     </template>
   </v-select>
 </template>
-
-<style>
-.v-field--variant-solo,
-.v-field--variant-solo-filled {
-  box-shadow: unset !important;
-}
-
-.v-list-item__spacer {
-  width: 12px !important;
-}
-</style>

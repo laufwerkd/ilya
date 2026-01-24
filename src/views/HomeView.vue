@@ -8,7 +8,7 @@ const items = ref([
 </script>
 
 <template>
-  <BaseCard>
+  <BaseCard style="height: 150vh;">
     <h1>Test</h1>
     <v-divider />
     <div class="d-flex flex-column ga-3">

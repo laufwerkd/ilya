@@ -8,19 +8,26 @@ const props = defineProps({
     type: String,
     default: 'surface',
   },
+  frosted: {
+    type: Boolean,
+    default: true,
+  },
 })
 </script>
 
 <template>
-  <v-card :class="`pa-${props.pa} d-flex flex-column ga-3 bg-${props.bgColor} rounded`">
+  <v-card
+    :class="[`pa-${props.pa}`, 'd-flex flex-column ga-3 rounded', props.frosted ? 'frosted' : `bg-${props.bgColor}`]"
+    :style="props.frosted ? { '--frost-color': `var(--v-theme-${props.bgColor})` } : {}"
+  >
     <slot />
   </v-card>
 </template>
 
 <style scoped>
-.v-card {
-  box-shadow:
-    rgba(var(--v-theme-dark), 0.1) 0px 4px 6px -1px,
-    rgba(var(--v-theme-dark), 0.06) 0px 2px 4px -1px;
+.frosted {
+  backdrop-filter: blur(8px) saturate(140%);
+  background-color: rgba(var(--frost-color), 0.33) !important;
+  border: 1px solid rgba(var(--v-theme-primary), 0.08);
 }
 </style>
