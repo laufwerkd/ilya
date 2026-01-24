@@ -10,7 +10,13 @@ const onCloseMenu = () => {
 </script>
 
 <template>
-  <v-menu v-model="isMenuOpen" transition="fade-transition" location="start" :close-on-content-click="false">
+  <v-menu
+    :close-on-content-click="false"
+    location="start"
+    min-width="255"
+    transition="fade-transition"
+    v-model="isMenuOpen"
+  >
     <template #activator="{ props }">
       <BaseButton :="props" icon="mdi-menu" size="default" class="opener" />
     </template>
@@ -19,7 +25,7 @@ const onCloseMenu = () => {
         <BaseButton v-for="item in navItems" :to="{ name: item.name }" :text="item.text" @click="onCloseMenu" />
       </div>
       <v-divider />
-      <AppThemeSwitcher />
+      <AppThemeSwitcher @selection="onCloseMenu" />
     </BaseCard>
   </v-menu>
 </template>

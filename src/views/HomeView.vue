@@ -17,7 +17,8 @@ const items = ref([
         <BaseButton text="Prepend Icon" icon="mdi-flash" />
         <BaseButton icon="mdi-flash" />
       </div>
-      <BaseSelect :items="items" label="Theme" />
+      <BaseSelect :items="items" label="Test" />
+      <BaseSelect :items="items" label="Test" icon="mdi-plus" />
     </div>
   </BaseCard>
 </template>

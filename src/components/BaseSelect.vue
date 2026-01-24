@@ -32,7 +32,11 @@ const props = defineProps({
   },
 })
 
-const commonAttrs = computed(() => {})
+const commonAttrs = computed(() => {
+  return {
+    listProps: { density: 'compact' },
+  }
+})
 </script>
 
 <template>
