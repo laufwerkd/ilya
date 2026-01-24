@@ -35,6 +35,7 @@ const onCloseMenu = () => {
 
 <style scoped>
 .opener {
+  z-index: 1;
   position: fixed;
   top: 12px;
   right: 12px;

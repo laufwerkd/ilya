@@ -1,5 +1,5 @@
 const FEATURES = {
-  themes: false,
+  themes: true,
 }
 
 const THEMES = {
