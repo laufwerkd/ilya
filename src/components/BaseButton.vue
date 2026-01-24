@@ -18,32 +18,24 @@ const props = defineProps({
     type: String,
     default: 'flat',
   },
-  size: {
-    type: String,
-    default: null,
-  },
   tooltip: {
     type: String,
     default: null,
   },
 })
 
-const isIcon = computed(() => !props.text && props.icon)
-
 const commonAttrs = computed(() => {
   return {
-    color: props.color,
-    variant: props.variant,
-    size: !props.text && props.icon && !props.size ? 'small' : props.size || 'default',
+    size: !props.text && props.icon && !props.size ? '36' : props.size,
     icon: !props.text && props.icon,
   }
 })
 </script>
 
 <template>
-  <v-btn :="{ ...$attrs, ...commonAttrs }" :class="{ rounded: !props.icon || props.text }">
-    <div class="d-flex ga-2">
-      <v-icon v-if="icon" :icon="icon" />
+  <v-btn :="{ ...$attrs, ...props, ...commonAttrs }" :class="{ rounded: !props.icon || props.text }">
+    <div class="d-flex align-center ga-2">
+      <v-icon v-if="icon" :icon="icon" :class="{ 'ms-n1': text && icon }" size="small" />
       <span v-if="text">{{ text }}</span>
       <slot />
     </div>

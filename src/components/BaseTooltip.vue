@@ -8,7 +8,7 @@ const props = defineProps({
   },
   location: {
     type: String,
-    default: 'top'
+    default: 'top',
   },
   openDelay: {
     type: undefined,
@@ -20,15 +20,9 @@ const props = defineProps({
   },
 })
 
-const commonAttrs = computed(() => {
-  return {
-    location: props.location,
-    openDelay: props.openDelay,
-    activator: props.activator,
-  }
-})
+const commonAttrs = computed(() => {})
 </script>
 
 <template>
-  <v-tooltip :="{ ...$attrs, ...commonAttrs }" :text="text" />
+  <v-tooltip :="{ ...$attrs, ...props, ...commonAttrs }" :text="text" />
 </template>
