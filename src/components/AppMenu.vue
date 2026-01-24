@@ -11,13 +11,7 @@ const onCloseMenu = () => {
 </script>
 
 <template>
-  <v-menu
-    :close-on-content-click="false"
-    location="start"
-    min-width="255"
-    transition="fade-transition"
-    v-model="isMenuOpen"
-  >
+  <v-menu :close-on-content-click="false" location="start" min-width="255" transition="none" v-model="isMenuOpen">
     <template #activator="{ props }">
       <BaseButton :="props" icon="mdi-menu" size="default" class="opener" />
     </template>
