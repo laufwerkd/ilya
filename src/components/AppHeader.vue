@@ -4,8 +4,7 @@ import { ref, onMounted } from 'vue'
 const headerRef = ref(null)
 
 onMounted(() => {
-  const height = headerRef.value.offsetHeight
-  document.documentElement.style.setProperty('--app-header-height', `${height}px`)
+  document.documentElement.style.setProperty('--app-header-height', `${headerRef.value.offsetHeight}px`)
 })
 </script>
 

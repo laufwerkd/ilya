@@ -1,6 +1,5 @@
 <script setup>
 import { ref } from 'vue'
-import { FEATURES } from '@/constants'
 
 const isMenuOpen = ref(false)
 
@@ -15,9 +14,7 @@ const onCloseMenu = () => {
       <BaseButton :="props" icon="mdi-menu" size="default" class="box-shadow" />
     </template>
     <BaseCard class="me-3">
-      <template v-if="FEATURES.themes">
-        <AppThemeSwitcher @selection="onCloseMenu" />
-      </template>
+      <AppThemeSwitcher @selection="onCloseMenu" />
     </BaseCard>
   </v-menu>
 </template>

@@ -1,7 +1,3 @@
-export const FEATURES = {
-  themes: true,
-}
-
 export const THEMES = {
   light: {
     title: 'Light',
