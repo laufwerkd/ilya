@@ -22,9 +22,6 @@ export const PROJECTS = [
         'c.png',
       ],
     },
-    style: {
-      color: '#9376e4',
-    },
   },
   {
     meta: {
@@ -35,9 +32,6 @@ export const PROJECTS = [
       path: './lorem',
       thumbnail: 'b.png',
       images: ['a.png', 'b.png', 'c.png', 'a.png', 'b.png', 'c.png'],
-    },
-    style: {
-      color: '#9376e4',
     },
   },
   {
@@ -50,9 +44,6 @@ export const PROJECTS = [
       thumbnail: 'c.png',
       images: ['c.png', '4k.png'],
     },
-    style: {
-      color: '#9376e4',
-    },
   },
   {
     meta: {
@@ -64,8 +55,16 @@ export const PROJECTS = [
       thumbnail: 'a.png',
       images: ['4k.png', '4k.png', '4k.png'],
     },
-    style: {
-      color: '#9376e4',
+  },
+  {
+    meta: {
+      name: 'EFT',
+      date: '26.01.2026',
+    },
+    files: {
+      path: './new',
+      thumbnail: 'eft.png',
+      images: ['eft.png'],
     },
   },
 ]
