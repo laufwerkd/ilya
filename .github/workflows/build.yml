@@ -4,27 +4,24 @@ on:
   push:
     branches: [main]
 
+permissions:
+  contents: write
+
 jobs:
   build:
     runs-on: ubuntu-latest
 
     steps:
-      # checkout source
       - uses: actions/checkout@v4
 
-      # node
       - uses: actions/setup-node@v4
         with:
           node-version: 20
 
-      # install + build
       - run: npm ci
       - run: npm run build
-
-      # copy art into build
       - run: cp -r art dist/art
 
-      # push dist to deploy branch
       - name: Deploy to deploy branch
         run: |
           cd dist
