@@ -20,7 +20,7 @@ jobs:
 
       - run: npm ci
       - run: npm run build
-      - run: cp -r art dist/art
+      - run: cp -r src/art dist/art
 
       - name: Deploy to deploy branch
         run: |
