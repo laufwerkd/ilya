@@ -63,5 +63,22 @@ export const PROJECTS = [
     style: {
       color: '#9376e4',
     },
+  {
+    meta: {
+      name: 'Test',
+      date: '26.01.2026',
+    },
+    files: {
+      path: './lorem',
+      thumbnail: 'a.png',
+      images: [
+        '4k.png',
+        '4k.png',
+        '4k.png',
+      ],
+    },
+    style: {
+      color: '#9376e4',
+    },
   },
 ]
