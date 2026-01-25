@@ -25,17 +25,6 @@ export const PROJECTS = [
   },
   {
     meta: {
-      name: 'EFT',
-      date: '26.01.2026',
-    },
-    files: {
-      path: './new',
-      thumbnail: 'eft.png',
-      images: ['eft.png'],
-    },
-  },
-  {
-    meta: {
       name: 'Lorem',
       date: '26.01.2026',
     },
