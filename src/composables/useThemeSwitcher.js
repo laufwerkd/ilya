@@ -14,32 +14,14 @@ export default function useThemeSwitcher() {
   const themes = vuetifyTheme.themes.value
 
   const setToTheme = (value) => {
-    let themeToApply = value
-
-    if (value === 'system') {
-      themeToApply = getSystemTheme()
-    }
-
-    if (!themes[themeToApply]) {
-      themeToApply = 'dark' // fallback
-    }
-
-    vuetifyTheme.global.name.value = themeToApply
-    localStorageStore.setItem('theme', themeToApply)
+    if (!themes[value]) value = 'system' // fallback
+    vuetifyTheme.global.name.value = value
+    localStorageStore.setItem('theme', value)
   }
-
-  const getSystemTheme = () =>
-    window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light'
 
   // auto apply on startup
   const saved = localStorageStore.getItem('theme')
   setToTheme(saved ?? 'system')
-
-  // auto switch on system theme
-  const mediaQuery = window.matchMedia('(prefers-color-scheme: dark)')
-  const listener = (e) => setToTheme('system')
-  if (saved === 'system') mediaQuery.addEventListener('change', listener)
-  else mediaQuery.removeEventListener('change', listener)
 
   return {
     currentTheme,
