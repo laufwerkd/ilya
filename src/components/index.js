@@ -1,3 +1,4 @@
+import AppFooter from './AppFooter.vue'
 import AppGalery from './AppGalery.vue'
 import AppHeader from './AppHeader.vue'
 import AppLogo from './AppLogo.vue'
@@ -10,6 +11,7 @@ import BaseSelect from './BaseSelect.vue'
 import BaseTooltip from './BaseTooltip.vue'
 
 export const registerComponents = (app) => {
+  app.component('AppFooter', AppFooter)
   app.component('AppGalery', AppGalery)
   app.component('AppHeader', AppHeader)
   app.component('AppLogo', AppLogo)

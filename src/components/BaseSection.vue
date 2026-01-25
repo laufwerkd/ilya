@@ -1,5 +1,18 @@
+<script setup>
+const props = defineProps({
+  height: {
+    type: Boolean,
+    default: false,
+  },
+})
+</script>
+
 <template>
-  <section>
+  <section
+    :style="{
+      minHeight: `calc(${height}vh - var(--app-header-height))`,
+    }"
+  >
     <slot />
   </section>
 </template>

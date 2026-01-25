@@ -13,5 +13,6 @@ onMounted(() => {
   <v-container class="pa-0" max-width="1800">
     <AppHeader />
     <RouterView />
+    <AppFooter />
   </v-container>
 </template>

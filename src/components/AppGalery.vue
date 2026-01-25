@@ -1,6 +1,6 @@
 <script setup>
 import { ref } from 'vue'
-import { IMAGES_ROOT, IMAGES_FILES } from '@/constants/artist'
+import { IMAGES } from '@/constants/artist'
 
 const imagePreview = ref({
   visible: false,
@@ -19,8 +19,8 @@ const onCloseImage = () => {
 
 <template>
   <div class="galery-grid justify-center ga-1">
-    <div v-for="image in IMAGES_FILES" @click="onOpenImage(image)" class="image-preview overflow-hidden cursor-pointer">
-      <img :src="`${IMAGES_ROOT}/${image}`" class="thumbnail d-block w-100 h-100" />
+    <div v-for="image in IMAGES.files" @click="onOpenImage(image)" class="image-preview overflow-hidden cursor-pointer">
+      <img :src="`${IMAGES.root}/${image}`" class="thumbnail d-block w-100 h-100" />
     </div>
   </div>
 
@@ -29,7 +29,7 @@ const onCloseImage = () => {
       <div class="d-flex justify-end">
         <BaseButton @click="onCloseImage()" icon="mdi-close" variant="text" size="default" />
       </div>
-      <img :src="`${IMAGES_ROOT}/${imagePreview.src}`" width="100%" height="auto" />
+      <img :src="`${IMAGES.root}/${imagePreview.src}`" width="100%" height="auto" />
     </div>
   </v-dialog>
 </template>
