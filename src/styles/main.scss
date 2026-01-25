@@ -35,3 +35,6 @@ html * {
 .v-list-item__spacer {
   width: 12px !important;
 }
+.v-overlay__scrim {
+  background: rgb(var(--v-theme-shadow)) !important;
+}

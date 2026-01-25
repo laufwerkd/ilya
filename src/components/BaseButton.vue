@@ -10,10 +10,6 @@ const props = defineProps({
     type: String,
     default: null,
   },
-  color: {
-    type: String,
-    default: 'primary',
-  },
   variant: {
     type: String,
     default: 'flat',
