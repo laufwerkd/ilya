@@ -34,14 +34,7 @@ export const PROJECTS = [
     files: {
       path: './lorem',
       thumbnail: 'b.png',
-      images: [
-        'a.png',
-        'b.png',
-        'c.png',
-        'a.png',
-        'b.png',
-        'c.png',
-      ],
+      images: ['a.png', 'b.png', 'c.png', 'a.png', 'b.png', 'c.png'],
     },
     style: {
       color: '#9376e4',
@@ -55,14 +48,12 @@ export const PROJECTS = [
     files: {
       path: './lorem',
       thumbnail: 'c.png',
-      images: [
-        'c.png',
-        '4k.png',
-      ],
+      images: ['c.png', '4k.png'],
     },
     style: {
       color: '#9376e4',
     },
+  },
   {
     meta: {
       name: 'Test',
@@ -71,11 +62,7 @@ export const PROJECTS = [
     files: {
       path: './lorem',
       thumbnail: 'a.png',
-      images: [
-        '4k.png',
-        '4k.png',
-        '4k.png',
-      ],
+      images: ['4k.png', '4k.png', '4k.png'],
     },
     style: {
       color: '#9376e4',
