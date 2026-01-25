@@ -7,7 +7,7 @@ import { SOCIALS } from '@/constants/artist'
     <BaseCard class="px-3">
       <div class="d-flex ga-3">
         <a v-for="social in SOCIALS" :key="social.url" :href="social.url" target="_blank">
-          <v-icon :icon="social.icon" color="primary" />
+          <v-icon :icon="social.icon" color="secondary" />
         </a>
       </div>
     </BaseCard>
