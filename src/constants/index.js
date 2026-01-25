@@ -1,8 +1,8 @@
-const FEATURES = {
+export const FEATURES = {
   themes: true,
 }
 
-const THEMES = {
+export const THEMES = {
   light: {
     title: 'Light',
     dark: false,
@@ -34,5 +34,3 @@ const THEMES = {
     },
   },
 }
-
-export { FEATURES, THEMES }
