@@ -10,7 +10,7 @@ onMounted(() => {
 
 <template>
   <header ref="headerRef" class="position-sticky top-0 left-0 pa-3 d-flex justify-space-between" style="z-index: 1">
-    <img alt="logo" />
+    <AppLogo />
     <AppMenu />
   </header>
 </template>

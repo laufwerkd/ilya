@@ -1,5 +1,6 @@
 import AppGalery from './AppGalery.vue'
 import AppHeader from './AppHeader.vue'
+import AppLogo from './AppLogo.vue'
 import AppMenu from './AppMenu.vue'
 import AppThemeSwitcher from './AppThemeSwitcher.vue'
 import BaseButton from './BaseButton.vue'
@@ -11,6 +12,7 @@ import BaseTooltip from './BaseTooltip.vue'
 export const registerComponents = (app) => {
   app.component('AppGalery', AppGalery)
   app.component('AppHeader', AppHeader)
+  app.component('AppLogo', AppLogo)
   app.component('AppMenu', AppMenu)
   app.component('AppThemeSwitcher', AppThemeSwitcher)
   app.component('BaseButton', BaseButton)
