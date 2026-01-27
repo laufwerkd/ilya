@@ -29,7 +29,7 @@
       </BaseCard>
       <div class="d-flex ga-3">
         <BaseButton text="Button" color="primary" />
-        <BaseButton text="Icon Button" icon="mdi-check" color="primary" />
+        <Base text="Icon Button" icon="mdi-check" color="primary" />
         <BaseButton icon="mdi-check" color="primary" />
       </div>
       <BaseSelect
