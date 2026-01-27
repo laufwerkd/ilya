@@ -7,10 +7,10 @@ import { MAIL, SOCIALS } from '@/constants/artist'
     <BaseCard class="px-3" v-if="SOCIALS.length || MAIL">
       <div class="d-flex ga-3">
         <a v-if="SOCIALS.length" v-for="social in SOCIALS" :key="social.url" :href="social.url" target="_blank">
-          <v-icon :icon="social.icon" color="secondary" />
+          <v-icon :icon="social.icon" color="primary" />
         </a>
         <a v-if="MAIL" :href="`mailto:${MAIL}`">
-          <v-icon icon="mdi-email" color="secondary" />
+          <v-icon icon="mdi-email" color="primary" />
         </a>
       </div>
     </BaseCard>

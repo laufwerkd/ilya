@@ -1,5 +1,8 @@
 @use 'vuetify';
-
+@font-face {
+  font-family: Hand;
+  src: url(/src/assets/LaBelleAurore.ttf);
+}
 html * {
   font-family:
     system-ui,
@@ -14,6 +17,9 @@ html * {
     'Helvetica Neue',
     sans-serif;
 }
+.text-hand {
+  font-family: Hand;
+}
 .v-btn {
   text-transform: none !important;
 }
@@ -21,8 +27,8 @@ html * {
 .v-select__content,
 .box-shadow {
   box-shadow:
-    rgba(var(--v-theme-shadow), 0.1) 0px 4px 6px -1px,
-    rgba(var(--v-theme-shadow), 0.06) 0px 2px 4px -1px !important;
+    rgba(black, 0.1) 0px 4px 6px -1px,
+      rgba(black, 0.06) 0px 2px 4px -1px !important;
 }
 .v-list,
 .v-field--variant-solo,
@@ -36,5 +42,5 @@ html * {
   width: 12px !important;
 }
 .v-overlay__scrim {
-  background: rgb(var(--v-theme-shadow)) !important;
+  background: black !important;
 }
