@@ -7,12 +7,5 @@ export const SOCIALS = [
     url: 'https://twitter.com',
     icon: 'mdi-twitter',
   },
-  {
-    url: 'https://github.com',
-    icon: 'mdi-github',
-  },
-  {
-    url: 'https://instagram.com',
-    icon: 'mdi-instagram',
-  },
 ]
+export const MAIL = ''
