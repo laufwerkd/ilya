@@ -18,13 +18,11 @@
       </BaseCard>
       <BaseCard class="w-100" style="max-width: 800px" pa="9">
         <h2 class="text-primary text-decoration-underline">Образование</h2>
-        <BaseCard bg-color="secondary">
           <div>
             <h3>Оператор по информационной безопасности автоматизированных систем</h3>
             <div><i>НППК</i> — Новосибирск, Россия</div>
             <div class="text-disabled"><i>2021 - 2024</i></div>
           </div>
-        </BaseCard>
         <div>
           <h3 class="text-accent">Дополнительное образование и курсы</h3>
           <ul class="ps-9">
