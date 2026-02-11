@@ -1,14 +1,10 @@
 export const IMAGES = {
   root: import.meta.env.PROD ? '/art' : '/src/art',
-  files: [
-    '3d model.png',
-    'all sketches.png',
-    'b -front.png',
-    'b all.png',
-    'b front.png',
-    'c main.png',
-    'cranes sketch.png',
-  ],
+  projects: {
+    project0: ['3d model.png', 'all sketches.png'],
+    project1: ['b -front.png', 'b all.png', 'b front.png'],
+    project2: ['c main.png', 'cranes sketch.png'],
+  },
 }
 export const SOCIALS = [
   {

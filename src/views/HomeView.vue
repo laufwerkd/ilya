@@ -1,10 +1,14 @@
+<script setup>
+import { IMAGES } from '@/constants/artist'
+</script>
+
 <template>
-  <BaseSection height="100" class="d-flex flex-column justify-center">
-    <AppGalery />
+  <BaseSection height="100" class="d-flex flex-column justify-center ga-1">
+    <AppGalery v-for="(images, projectKey) in IMAGES.projects" :key="projectKey" :project="projectKey" />
   </BaseSection>
   <BaseSection height="75" class="pa-3 d-flex flex-column justify-center align-center">
     <div class="d-flex flex-column ga-3">
-      <div class="px-9 d-flex align-center ga-9">
+      <div class="pt-5 px-9 d-flex align-center ga-9">
         <div class="text-hand text-primary text-center font-weight-bold" style="font-size: 4rem">Résumé</div>
         <v-divider class="border-surface border-md border-opacity-100 rounded-pill" />
       </div>
@@ -18,11 +22,11 @@
       </BaseCard>
       <BaseCard class="w-100" style="max-width: 800px" pa="9">
         <h2 class="text-primary text-decoration-underline">Образование</h2>
-          <div>
-            <h3>Оператор по информационной безопасности автоматизированных систем</h3>
-            <div><i>НППК</i> — Новосибирск, Россия</div>
-            <div class="text-disabled"><i>2021 - 2024</i></div>
-          </div>
+        <div>
+          <h3>Оператор по информационной безопасности автоматизированных систем</h3>
+          <div><i>НППК</i> — Новосибирск, Россия</div>
+          <div class="text-disabled"><i>2021 - 2024</i></div>
+        </div>
         <div>
           <h3 class="text-accent">Дополнительное образование и курсы</h3>
           <ul class="ps-9">
