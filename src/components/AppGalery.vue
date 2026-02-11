@@ -55,7 +55,7 @@ const onCloseImage = () => {
 
 .thumbnail {
   object-fit: cover;
-  aspect-ratio: 1 / 1.414;
+  aspect-ratio: 1 / 1.4;
   transition: transform 0.33s ease;
 }
 
