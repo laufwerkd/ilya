@@ -62,6 +62,20 @@ const onCloseImage = () => {
   margin: 0 auto;
   width: auto;
 }
+@media (max-width: 768px) {
+  .galery-grid {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  }
+
+  .thumbnail {
+    aspect-ratio: 16 / 9; /* сохраняем горизонтальную ориентацию */
+  }
+}
+@media (max-width: 480px) {
+  .galery-grid {
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  }
+}
 
 .image-preview {
   overflow: hidden;
