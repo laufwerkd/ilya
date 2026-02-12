@@ -56,5 +56,7 @@ html * {
   font-size: clamp(0.85rem, 1.2vw, 1.2rem);
   color: #C0C0C0;
   text-align: center;  /* или left, если нужно */
-  margin-bottom: 16px; /* отступ между описанием и сеткой */
+  margin-bottom: 4px; /* отступ между описанием и сеткой */
+  margin-top: 4px;
 }
+

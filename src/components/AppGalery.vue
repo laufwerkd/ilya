@@ -80,7 +80,6 @@ const onCloseImage = () => {
 .image-preview {
   overflow: hidden;
   cursor: pointer;
-  border-radius: 12px;
 }
 
 .image-preview:hover .thumbnail {

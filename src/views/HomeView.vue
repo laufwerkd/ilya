@@ -18,11 +18,12 @@ import { IMAGES } from '@/constants/artist'
         <v-divider class="border-surface border-md border-opacity-100 rounded-pill" />
       </div>
       <BaseCard class="w-100" style="max-width: 800px" pa="9">
-        <h2 class="text-primary text-decoration-underline">Цель</h2>
+        <h2 class="text-primary text-decoration-underline">Обо мне</h2>
         <p>
-          Стремлюсь к профессиональному развитию в области концепт арта и иллюстрации, чтобы вносить вклад в создание
-          миров для видеоигр, кино, анимации. Моя цель — создавать интересные, уникальные, запоминающиеся локации и
-          персонажей, которые смогут вдохновить и лучше погрузить зрителя в фантастические вселенные.
+          Меня зовут Илья, мне 22 года. Я развиваюсь в направлении концепт-арта и иллюстрации, хочу участвовать в создании миров для видеоигр, кино и анимации.
+          Мне интересно придумывать и визуализировать уникальные локации и персонажей, которые будут вдохновлять зрителя и помогать ему погрузиться в атмосферу различных вселенных.
+
+          Я открыт для сотрудничества, всегда рад возможностям для роста и развития.
         </p>
       </BaseCard>
       <BaseCard class="w-100" style="max-width: 800px" pa="9">
@@ -76,7 +77,7 @@ import { IMAGES } from '@/constants/artist'
         </v-list>
       </BaseCard>
       <BaseCard class="w-100" style="max-width: 800px" pa="9">
-        <h2 class="text-primary text-decoration-underline">О себе</h2>
+        <h2 class="text-primary text-decoration-underline">Дополнительно</h2>
         <div>
           <h3 class="text-accent">Личные качества</h3>
           <ul class="ps-9">
