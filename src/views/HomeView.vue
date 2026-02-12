@@ -3,13 +3,13 @@ import { IMAGES } from '@/constants/artist'
 </script>
 
 <template>
-  <BaseSection height="100" class="d-flex flex-column justify-center align-center ga-1">
+  <BaseSection height="100" class="d-flex flex-column justify-center align-center ga-6">
     <AppGalery
-  v-for="(images, projectKey) in IMAGES.projects"
-  :key="projectKey"
-  :project="projectKey"
-  class="app-galery-centered"
-/>
+      v-for="(images, projectKey) in IMAGES.projects"
+      :key="projectKey"
+      :project="projectKey"
+      class="app-galery-centered"
+    />
   </BaseSection>
   <BaseSection height="75" class="pa-3 d-flex flex-column justify-center align-center">
     <div class="d-flex flex-column ga-3">
@@ -20,10 +20,10 @@ import { IMAGES } from '@/constants/artist'
       <BaseCard class="w-100" style="max-width: 800px" pa="9">
         <h2 class="text-primary text-decoration-underline">Обо мне</h2>
         <p>
-          Меня зовут Илья, мне 22 года. Я развиваюсь в направлении концепт-арта и иллюстрации, хочу участвовать в создании миров для видеоигр, кино и анимации.
-          Мне интересно придумывать и визуализировать уникальные локации и персонажей, которые будут вдохновлять зрителя и помогать ему погрузиться в атмосферу различных вселенных.
-
-          Я открыт для сотрудничества, всегда рад возможностям для роста и развития.
+          Меня зовут Илья, мне 22 года. Я развиваюсь в направлении концепт-арта и иллюстрации, хочу участвовать в
+          создании миров для видеоигр, кино и анимации. Мне интересно придумывать и визуализировать уникальные локации и
+          персонажей, которые будут вдохновлять зрителя и помогать ему погрузиться в атмосферу различных вселенных. Я
+          открыт для сотрудничества, всегда рад возможностям для роста и развития.
         </p>
       </BaseCard>
       <BaseCard class="w-100" style="max-width: 800px" pa="9">
