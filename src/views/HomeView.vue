@@ -3,7 +3,7 @@ import { IMAGES } from '@/constants/artist'
 </script>
 
 <template>
-  <BaseSection height="100" class="d-flex flex-column justify-center align-center ga-12">
+  <BaseSection height="100" class="d-flex flex-column justify-center align-center ga-6">
     <AppGalery
       v-for="(images, projectKey) in IMAGES.projects"
       :key="projectKey"
