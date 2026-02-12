@@ -26,19 +26,19 @@ const onCloseImage = () => {
 
 <template>
   <div class="project-container">
-  <div class="galery-grid justify-center ga-1">
-    <div
-      v-for="(image, index) in IMAGES.projects[project]"
-      :key="index"
-      @click="onOpenImage(image)"
-      class="image-preview overflow-hidden cursor-pointer"
->
-      <img :src="`${IMAGES.root}/${image}`" class="thumbnail d-block w-100 h-100" />
+    <div class="galery-grid justify-center ga-1">
+      <div
+        v-for="(image, index) in IMAGES.projects[project]"
+        :key="index"
+        @click="onOpenImage(image)"
+        class="image-preview overflow-hidden cursor-pointer"
+      >
+        <img :src="`${IMAGES.root}/${image}`" class="thumbnail d-block w-100 h-100" />
+      </div>
     </div>
-  </div>
-  <div class="project-description">
-    {{ IMAGES.descriptions[project] }}
-  </div>
+    <div class="project-description">
+      {{ IMAGES.descriptions[project] }}
+    </div>
   </div>
 
   <v-dialog v-model="imagePreview.visible" width="fit-content" style="backdrop-filter: blur(4px)">
