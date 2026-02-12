@@ -1,6 +1,4 @@
 <script setup>
-import { computed } from 'vue'
-
 const props = defineProps({
   items: {
     type: Array,
@@ -31,16 +29,10 @@ const props = defineProps({
     default: true,
   },
 })
-
-const commonAttrs = computed(() => {
-  return {
-    listProps: { density: 'compact' },
-  }
-})
 </script>
 
 <template>
-  <v-select :="{ ...$attrs, ...props, ...commonAttrs }">
+  <v-select :="{ ...$attrs, ...props, listProps: { density: 'compact' } }">
     <template #prepend-inner>
       <v-icon v-if="icon" :icon="icon" size="small" class="me-1" />
     </template>

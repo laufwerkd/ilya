@@ -11,7 +11,7 @@ const onCloseMenu = () => {
 <template>
   <v-menu :close-on-content-click="false" location="start" transition="none" v-model="isMenuOpen">
     <template #activator="{ props }">
-      <BaseButton :="props" icon="mdi-menu" size="default" class="box-shadow" />
+      <BaseButton v-bind="props" icon="mdi-menu" size="default" class="box-shadow" />
     </template>
     <BaseCard class="me-3">
       <AppThemeSwitcher @selection="onCloseMenu" />

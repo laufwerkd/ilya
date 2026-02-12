@@ -3,13 +3,18 @@ import { IMAGES } from '@/constants/artist'
 </script>
 
 <template>
-  <BaseSection height="100" class="d-flex flex-column justify-center ga-1">
-    <AppGalery v-for="(images, projectKey) in IMAGES.projects" :key="projectKey" :project="projectKey" />
+  <BaseSection height="100" class="d-flex flex-column justify-center align-center ga-1">
+    <AppGalery
+  v-for="(images, projectKey) in IMAGES.projects"
+  :key="projectKey"
+  :project="projectKey"
+  class="app-galery-centered"
+/>
   </BaseSection>
   <BaseSection height="75" class="pa-3 d-flex flex-column justify-center align-center">
     <div class="d-flex flex-column ga-3">
       <div class="pt-5 px-9 d-flex align-center ga-9">
-        <div class="text-primary text-center font-weight-bold" style="font-size: 4rem">Résumé</div>
+        <div class="text-primary text-center font-weight-bold" style="font-size: 3rem">Résumé</div>
         <v-divider class="border-surface border-md border-opacity-100 rounded-pill" />
       </div>
       <BaseCard class="w-100" style="max-width: 800px" pa="9">

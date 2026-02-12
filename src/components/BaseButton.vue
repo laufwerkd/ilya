@@ -29,7 +29,7 @@ const commonAttrs = computed(() => {
 </script>
 
 <template>
-  <v-btn :="{ ...$attrs, ...props, ...commonAttrs }" :class="{ rounded: !props.icon || props.text }">
+  <v-btn v-bind="{ ...$attrs, ...props, ...commonAttrs.value }" :class="{ rounded: !props.icon || props.text }">
     <div class="d-flex align-center ga-2">
       <v-icon v-if="icon" :icon="icon" :class="{ 'ms-n1': text && icon }" size="small" />
       <span v-if="text">{{ text }}</span>

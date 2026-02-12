@@ -44,3 +44,17 @@ html * {
 .v-overlay__scrim {
   background: black !important;
 }
+.app-galery-centered {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+}
+.project-container {
+  margin-bottom: 2px; /* отступ после проекта */
+}
+.project-description {
+  font-size: 1.2rem;
+  color: #C0C0C0;
+  text-align: center;  /* или left, если нужно */
+  margin-bottom: 16px; /* отступ между описанием и сеткой */
+}

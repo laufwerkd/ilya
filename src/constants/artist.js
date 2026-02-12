@@ -5,6 +5,11 @@ export const IMAGES = {
     project1: ['c main.png', 'c 3d.png', 'c sketch.png'],
     project2: ['all sketches.png'],
   },
+  descriptions: {
+    project0: 'Дом-мастерская старого ремесленника в фентези стиле',
+    project1: 'Оборонительная крепость на входе в город',
+    project2: 'Скетчи, не связанные между собой',
+  },
 }
 export const SOCIALS = [
   {

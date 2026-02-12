@@ -1,7 +1,5 @@
 <script setup>
-import { computed } from 'vue'
-
-const props = defineProps({
+defineProps({
   text: {
     type: String,
     default: null,
@@ -19,10 +17,8 @@ const props = defineProps({
     default: 'parent',
   },
 })
-
-const commonAttrs = computed(() => {})
 </script>
 
 <template>
-  <v-tooltip :="{ ...$attrs, ...props, ...commonAttrs }" :text="text" />
+  <v-tooltip :="{ ...$attrs }" :text="text" />
 </template>

@@ -1,5 +1,5 @@
 <script setup>
-const props = defineProps({
+defineProps({
   height: {
     type: Boolean,
     default: false,
