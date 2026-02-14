@@ -3,7 +3,7 @@ export const IMAGES = {
   projects: {
     project0: ['b front.png', 'b -front.png', 'b all.png'],
     project1: ['c main.png', 'c 3d.png', 'c sketch.png'],
-    project2: ['all sketches.png', 'n sketches.png'],
+    project2: ['n2 sketches.png', 'n sketches.png', 'all sketches.png'],
   },
   descriptions: {
     project0: 'Дом-мастерская старого ремесленника в фентези стиле',
