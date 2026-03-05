@@ -1,5 +1,5 @@
 export const IMAGES = {
-  root: import.meta.env.PROD ? '/art' : '/src/art',
+  root: '/art',
   projects: {
     project0: ['b front.png', 'b -front.png', 'b all.png'],
     project1: ['c main.png', 'c 3d.png', 'c sketch.png'],

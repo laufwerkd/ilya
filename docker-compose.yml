@@ -1,0 +1,7 @@
+services:
+  ilya:
+    build: .
+    ports:
+      - "80:80"
+    restart: unless-stopped
+    mem_limit: 256m
