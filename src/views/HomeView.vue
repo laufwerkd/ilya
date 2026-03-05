@@ -3,13 +3,14 @@ import { IMAGES } from '@/constants/artist'
 </script>
 
 <template>
-  <BaseSection height="100" class="d-flex flex-column justify-center align-center ga-6">
-    <AppGalery
-      v-for="(images, projectKey) in IMAGES.projects"
-      :key="projectKey"
-      :project="projectKey"
-      class="app-galery-centered"
-    />
+  <BaseSection height="100" class="d-flex flex-column justify-center align-center">
+    <div class="folder-grid">
+      <AppProjectFolder
+        v-for="(images, projectKey) in IMAGES.projects"
+        :key="projectKey"
+        :project="projectKey"
+      />
+    </div>
   </BaseSection>
   <BaseSection height="75" class="pa-3 d-flex flex-column justify-center align-center">
     <div class="d-flex flex-column ga-3">
@@ -98,3 +99,14 @@ import { IMAGES } from '@/constants/artist'
     </div>
   </BaseSection>
 </template>
+
+<style scoped>
+.folder-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 16px;
+  max-width: 1200px;
+  padding: 16px;
+}
+</style>

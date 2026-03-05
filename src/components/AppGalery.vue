@@ -36,9 +36,6 @@ const onCloseImage = () => {
         <img :src="`${IMAGES.root}/${image}`" class="thumbnail d-block w-100 h-100" />
       </div>
     </div>
-    <div class="project-description my-1 text-center">
-      {{ IMAGES.descriptions[project] }}
-    </div>
   </div>
 
   <v-dialog v-model="imagePreview.visible" width="fit-content" style="backdrop-filter: blur(4px)">
@@ -99,9 +96,5 @@ const onCloseImage = () => {
   width: auto;
   height: auto;
   object-fit: contain;
-}
-
-.project-description {
-  font-size: clamp(0.85rem, 1.2vw, 1.2rem);
 }
 </style>

@@ -1,6 +1,7 @@
 import AppFooter from './AppFooter.vue'
 import AppGalery from './AppGalery.vue'
 import AppHeader from './AppHeader.vue'
+import AppProjectFolder from './AppProjectFolder.vue'
 import AppLogo from './AppLogo.vue'
 import AppMenu from './AppMenu.vue'
 import AppThemeSwitcher from './AppThemeSwitcher.vue'
@@ -14,6 +15,7 @@ export const registerComponents = (app) => {
   app.component('AppFooter', AppFooter)
   app.component('AppGalery', AppGalery)
   app.component('AppHeader', AppHeader)
+  app.component('AppProjectFolder', AppProjectFolder)
   app.component('AppLogo', AppLogo)
   app.component('AppMenu', AppMenu)
   app.component('AppThemeSwitcher', AppThemeSwitcher)
