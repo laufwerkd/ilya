@@ -15,6 +15,6 @@ jobs:
           username: ${{ secrets.SSH_USER }}
           key: ${{ secrets.SSH_KEY }}
           script: |
-            cd ~/ilya
+            cd /var/www/ilya
             git pull
             docker compose up -d --build
