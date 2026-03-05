@@ -3,5 +3,8 @@ services:
     build: .
     ports:
       - "80:80"
+      - "443:443"
     restart: unless-stopped
     mem_limit: 256m
+    volumes:
+      - /etc/letsencrypt:/etc/letsencrypt:ro
